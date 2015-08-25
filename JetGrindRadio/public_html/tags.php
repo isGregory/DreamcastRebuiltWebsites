@@ -6,7 +6,12 @@
 	include 'dc_header.php';
 ?>
 
-<h3 align="left"><u><?php echo $pageTitle; ?></u></h3>
+<h3 align="left"><?php echo $pageTitle; ?></h3>
+<p align="left">
+	To use an image right away be sure to save it into the
+	VMU in <b><u>Slot One</u></b> as Jet Grind Radio only checks
+	that VMU when loading graffiti.
+</p>
 <p align="left">
 	<table align="center" cellpadding="3" cellspacing="1" border="0" style="min-width:300px;max-width:540px;" bgcolor="<?php echo $tBG; ?>">
 		<tr>

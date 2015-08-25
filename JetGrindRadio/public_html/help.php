@@ -6,10 +6,13 @@
 	include 'dc_header.php';
 ?>
 
-<h3 align="left"><u><?php echo $pageTitle; ?></u></h3>
+<h3 align="left"><?php echo $pageTitle; ?></h3>
 <p align="left">
 	<h3 align="left"><u>Web Browser</u></h3>
 	<p align="left">
+		Pressing either the left or right trigger
+		will open up basic navigation menus.
+		<br><br>
 		In order to unlock more browsing functions:
 		<br><br>
 		<table bgcolor="<?php echo $tHead; ?>" align="center" border="0">

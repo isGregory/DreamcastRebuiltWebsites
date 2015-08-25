@@ -6,7 +6,7 @@
 	include 'dc_header.php';
 ?>
 
-<h3 align="left"><u><?php echo $pageTitle; ?></u></h3>
+<h3 align="left"><?php echo $pageTitle; ?></h3>
 <p align="left">
 	Welcome to Jet Grind Radio!<br><br>
 	If you arrived at this page through the in-game menu of Jet Grind Radio,
