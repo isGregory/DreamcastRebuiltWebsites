@@ -41,3 +41,4 @@ Site:	jetgrindradio.web.dreamcast.com
 #
 # Usage:
 # Writable:	folder_name
+# Executable:	folder_name

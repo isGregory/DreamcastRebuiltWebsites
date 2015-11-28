@@ -41,3 +41,5 @@ Site:	shenmue.com
 #
 # Usage:
 # Writable:	folder_name
+# Executable:	folder_name
+Executable:	/passport_us/vm_data/atsumt

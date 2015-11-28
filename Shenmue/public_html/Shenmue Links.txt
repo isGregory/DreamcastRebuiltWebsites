@@ -1,0 +1,195 @@
+Shenmue Passport Links:
+Check:
+	/var/log/apache2/access.log
+	To see the calls being made to the server.
+
+Main Menu:
+
+Called on connecting for the first time:
+(Each of the 3 calls is 3 seconds apart)
+Bin:
+GET /passport_us/man/emg/emgfirst.bin
+CGI Scripts:
+POST /cgi-bin/passport_us/man/ranking/sse_clnt_4.cgi
+POST /cgi-bin/passport_us/vm/vm_upload.cgi
+
+Urgent Messages!
+	(Nothing is called)
+	- Topics
+		- GET /public_html/passport_us/man/emg/topics.bin
+
+Shenmue World
+	(Nothing is called)
+	- Places
+		- Hazuki
+			- POST /cgi-bin/passport_us/sps/sps2.cgi
+	- Profiles
+		- Each person:
+			- POST /cgi-bin/passport_us/sps/sps3.cgi
+	- All Moves Scroll
+		- Tiger Knuckle
+			- GET /public_html/passport_us/man/tech/waza00.bin
+		- Elbow Slam
+			- GET /public_html/passport_us/man/tech/waza01.bin
+		- Twist Knuckle
+			- GET /public_html/passport_us/man/tech/waza02.bin
+		- Elbow Assault
+			- GET /public_html/passport_us/man/tech/waza03.bin
+		- Upper Knuckle
+			- GET /public_html/passport_us/man/tech/waza04.bin
+		- Sleeve Strike
+			- GET /public_html/passport_us/man/tech/waza05.bin
+		- Rain Thrust
+			- GET /public_html/passport_us/man/tech/waza06.bin
+		- Big Wheel
+			- GET /public_html/passport_us/man/tech/waza07.bin
+		- TwinHandWaves
+			- GET /public_html/passport_us/man/tech/waza08.bin
+		- Backfist Willow
+			- GET /public_html/passport_us/man/tech/waza09.bin
+		- AvalancheLance
+			- GET /public_html/passport_us/man/tech/waza10.bin
+		- KatanaMistSlash
+			- GET /public_html/passport_us/man/tech/waza11.bin
+		- Mistral Flash
+			- GET /public_html/passport_us/man/tech/waza12.bin
+		- Crescent Kick
+			- GET /public_html/passport_us/man/tech/waza32.bin
+		- Trample Kick
+			- GET /public_html/passport_us/man/tech/waza33.bin
+		- SideReaperKick
+			- GET /public_html/passport_us/man/tech/waza34.bin
+		- AgainstCascade
+			- GET /public_html/passport_us/man/tech/waza35.bin
+		- Surplice Slash
+			- GET /public_html/passport_us/man/tech/waza36.bin
+		- Thunder Kick
+			- GET /public_html/passport_us/man/tech/waza37.bin
+		- HoldAgainstLeg
+			- GET /public_html/passport_us/man/tech/waza38.bin
+		- Brutal Tiger
+			- GET /public_html/passport_us/man/tech/waza39.bin
+		- Dark Moon
+			- GET /public_html/passport_us/man/tech/waza40.bin
+		- Cyclone Kick
+			- GET /public_html/passport_us/man/tech/waza41.bin
+		- Windmill
+			- GET /public_html/passport_us/man/tech/waza42.bin
+		- Overthrow
+			- GET /public_html/passport_us/man/tech/waza64.bin
+		- Sweep Throw
+			- GET /public_html/passport_us/man/tech/waza65.bin
+		- Vortex Throw
+			- GET /public_html/passport_us/man/tech/waza66.bin
+		- Mist Reaper
+			- GET /public_html/passport_us/man/tech/waza67.bin
+		- Demon Drop
+			- GET /public_html/passport_us/man/tech/waza68.bin
+		- Shoulder Buster
+			- GET /public_html/passport_us/man/tech/waza69.bin
+		- Tengu Drop
+			- GET /public_html/passport_us/man/tech/waza70.bin
+		- DarksideHazuki
+			- GET /public_html/passport_us/man/tech/waza71.bin
+		- BackTwistDrop
+			- GET /public_html/passport_us/man/tech/waza72.bin
+
+Nozomi's Messages
+	- POST /cgi-bin/passport_us/sps/sps2.cgi
+	- Information
+		- I assume this information is loaded when the CGI script is called.
+Network Ranking
+	(Nothing is called)
+	- First game chosen it will make 4 attempts with:
+		- POST /cgi-bin/passport_us/vm/shm_ps_tel_us.cgi
+	- All other selections make a single attempt to the same cgi script.
+	
+Data Review
+	- No network activity
+	- This is really good for indicating what types of variables are in the save file.
+
+Online Manual
+	- GET /passport_us/man/MNETC.bin
+	- Start Menu
+		- Starting a Game
+			- GET /passport_us/man/MN35.bin
+		- Game Settings
+			- GET /passport_us/man/MN70.bin
+	- Help
+		- GET /passport_us/man/MN10.bin
+	- Notebook
+		- GET /passport_us/man/MN11.bin
+	- System Menu
+		- Moves Scroll
+			- GET /passport_us/man/MN51.bin
+		- Items
+			- GET /passport_us/man/MN37.bin
+		- Settings
+			- GET /passport_us/man/MN36.bin
+		- Resume
+			- GET /passport_us/man/MN38.bin
+		- Etc.
+			- This is set by MNETC.bin when online manual is loaded.
+	- Free Quest
+		- Movement
+			- GET /passport_us/man/MN39.bin
+		- Search
+			- Lock-on
+				- GET /passport_us/man/MN40.bin
+			- Dialing Numbers
+				- GET /passport_us/man/MN41.bin
+			- Shopping
+				- GET /passport_us/man/MN58.bin
+			- Etc.
+		- Conversation
+			- GET /passport_us/man/MN42.bin
+		- Action Selector
+			- GET /passport_us/man/MN43.bin
+		- Save Point
+			- Save
+				- GET /passport_us/man/MN44.bin
+			- Training
+				- GET /passport_us/man/MN45.bin
+			- Sleep
+				- GET /passport_us/man/MN46.bin
+			- Settings
+				- GET /passport_us/man/MN36.bin
+		- Etc.
+	- Battle
+		- Training
+			- GET /passport_us/man/MN45.bin
+		- Practice * Sparring
+			- GET /passport_us/man/MN47.bin
+		- Move Instruction
+			- GET /passport_us/man/MN48.bin
+		- Free Battle
+			- GET /passport_us/man/MN49.bin
+	- Event
+		- QTE
+			- GET /passport_us/man/MN50.bin
+		- Mini-Games
+			- Darts Seven
+				- GET /passport_us/man/MN59.bin
+			- Excite QTE 2
+				- GET /passport_us/man/MN60.bin
+			- QTE TITLE
+				- GET /passport_us/man/MN61.bin
+			- Etc.
+		- Vehicles
+			- Forklift
+				- GET /passport_us/man/MN62.bin
+			- Motorcycle
+				- GET /passport_us/man/MN63.bin
+
+Everyone's Space
+	- GET /passport_us/whatsnew/whatsnew.bin
+	- Shenmue Goodies
+		- Download file?
+			- GET /passport_us/vm_data/atsumt/vmshmprg.bin
+	- Free Market - Offline
+	- What's New! - loaded from whatsnew.bin
+
+Shenmue.com
+	- GET /shroot_us/index.htm
+
+	
